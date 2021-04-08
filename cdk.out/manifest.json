@@ -1,0 +1,37 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "my-first-cdk-project": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "my-first-cdk-project.template.json"
+      },
+      "metadata": {
+        "/my-first-cdk-project/myBucketId/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myBucketId9D590DD7",
+            "trace": [
+              "new Bucket (/private/tmp/jsii-kernel-xMlTzI/node_modules/@aws-cdk/aws-s3/lib/bucket.js:521:26)",
+              "/private/tmp/tmp2z9rxfmw/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/private/tmp/tmp2z9rxfmw/lib/program.js:8582:24)",
+              "Kernel._create (/private/tmp/tmp2z9rxfmw/lib/program.js:8154:34)",
+              "Kernel.create (/private/tmp/tmp2z9rxfmw/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/private/tmp/tmp2z9rxfmw/lib/program.js:9479:36)",
+              "KernelHost.run (/private/tmp/tmp2z9rxfmw/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/private/tmp/tmp2z9rxfmw/lib/program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.97.0"
+        }
+      },
+      "my-first-cdk-project": {
+        "id": "my-first-cdk-project",
+        "path": "my-first-cdk-project",
+        "children": {
+          "myBucketId": {
+            "id": "myBucketId",
+            "path": "my-first-cdk-project/myBucketId",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "my-first-cdk-project/myBucketId/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {}
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3.CfnBucket",
+                  "version": "1.97.0"
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "my-first-cdk-project/myBucketId/Notifications",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.97.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-s3.Bucket",
+              "version": "1.97.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.97.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.97.0"
+    }
+  }
+}
