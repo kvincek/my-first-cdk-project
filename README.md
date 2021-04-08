@@ -1,3 +1,1 @@
-# my-first-cdk-project
-# my-first-cdk-project
-# my-first-cdk-project
+# Welcome to my first CDK project
