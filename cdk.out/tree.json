@@ -16,16 +16,32 @@
         "id": "my-first-cdk-project",
         "path": "my-first-cdk-project",
         "children": {
-          "myBucketId": {
-            "id": "myBucketId",
-            "path": "my-first-cdk-project/myBucketId",
+          "yitongfirstcdkproject": {
+            "id": "yitongfirstcdkproject",
+            "path": "my-first-cdk-project/yitongfirstcdkproject",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "my-first-cdk-project/myBucketId/Resource",
+                "path": "my-first-cdk-project/yitongfirstcdkproject/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
-                  "aws:cdk:cloudformation:props": {}
+                  "aws:cdk:cloudformation:props": {
+                    "bucketEncryption": {
+                      "serverSideEncryptionConfiguration": [
+                        {
+                          "serverSideEncryptionByDefault": {
+                            "sseAlgorithm": "AES256"
+                          }
+                        }
+                      ]
+                    },
+                    "publicAccessBlockConfiguration": {
+                      "blockPublicAcls": true,
+                      "blockPublicPolicy": true,
+                      "ignorePublicAcls": true,
+                      "restrictPublicBuckets": true
+                    }
+                  }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3.CfnBucket",
@@ -34,7 +50,7 @@
               },
               "Notifications": {
                 "id": "Notifications",
-                "path": "my-first-cdk-project/myBucketId/Notifications",
+                "path": "my-first-cdk-project/yitongfirstcdkproject/Notifications",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
                   "version": "1.97.0"

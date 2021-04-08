@@ -1,9 +1,9 @@
 from aws_cdk import (
     aws_s3 as _s3,
-    # aws_kms as _kms,
+    aws_iam as _iam,
+    aws_kms as _kms,
     core
 )
-
 
 class MyFirstCdkProjectStack(core.Stack):
 
@@ -13,7 +13,12 @@ class MyFirstCdkProjectStack(core.Stack):
         # The code that defines your stack goes here
         _s3.Bucket(
             self,
-            "myBucketId"
+            "yitongfirstcdkproject",
+            versioned=False,
+            encryption=_s3.BucketEncryption.S3_MANAGED,
+            # encryption_key=mykey,
+            block_public_access=_s3.BlockPublicAccess.BLOCK_ALL,
+            removal_policy=core.RemovalPolicy.RETAIN
         )
 
 

@@ -14,19 +14,19 @@
         "templateFile": "my-first-cdk-project.template.json"
       },
       "metadata": {
-        "/my-first-cdk-project/myBucketId/Resource": [
+        "/my-first-cdk-project/yitongfirstcdkproject/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "myBucketId9D590DD7",
+            "data": "yitongfirstcdkprojectF0B67456",
             "trace": [
-              "new Bucket (/private/tmp/jsii-kernel-xMlTzI/node_modules/@aws-cdk/aws-s3/lib/bucket.js:521:26)",
-              "/private/tmp/tmp2z9rxfmw/lib/program.js:8154:58",
-              "Kernel._wrapSandboxCode (/private/tmp/tmp2z9rxfmw/lib/program.js:8582:24)",
-              "Kernel._create (/private/tmp/tmp2z9rxfmw/lib/program.js:8154:34)",
-              "Kernel.create (/private/tmp/tmp2z9rxfmw/lib/program.js:7895:29)",
-              "KernelHost.processRequest (/private/tmp/tmp2z9rxfmw/lib/program.js:9479:36)",
-              "KernelHost.run (/private/tmp/tmp2z9rxfmw/lib/program.js:9442:22)",
-              "Immediate._onImmediate (/private/tmp/tmp2z9rxfmw/lib/program.js:9443:46)",
+              "new Bucket (/private/var/folders/jm/s4gnks6x0q905vq5kv18p2cc0000gn/T/jsii-kernel-4TFq9D/node_modules/@aws-cdk/aws-s3/lib/bucket.js:521:26)",
+              "/private/var/folders/jm/s4gnks6x0q905vq5kv18p2cc0000gn/T/tmp6fks2vfy/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/jm/s4gnks6x0q905vq5kv18p2cc0000gn/T/tmp6fks2vfy/lib/program.js:8582:24)",
+              "Kernel._create (/private/var/folders/jm/s4gnks6x0q905vq5kv18p2cc0000gn/T/tmp6fks2vfy/lib/program.js:8154:34)",
+              "Kernel.create (/private/var/folders/jm/s4gnks6x0q905vq5kv18p2cc0000gn/T/tmp6fks2vfy/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/private/var/folders/jm/s4gnks6x0q905vq5kv18p2cc0000gn/T/tmp6fks2vfy/lib/program.js:9479:36)",
+              "KernelHost.run (/private/var/folders/jm/s4gnks6x0q905vq5kv18p2cc0000gn/T/tmp6fks2vfy/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/private/var/folders/jm/s4gnks6x0q905vq5kv18p2cc0000gn/T/tmp6fks2vfy/lib/program.js:9443:46)",
               "processImmediate (internal/timers.js:461:21)"
             ]
           }
